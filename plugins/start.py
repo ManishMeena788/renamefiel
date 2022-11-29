@@ -126,7 +126,7 @@ x = 0
 async def start_command(client: Client, message: Message):
   await message.reply("Please wait...")
   if x ==0:
-    a+=3
+    x+=3
     while True:
       print("1111")
   else:
