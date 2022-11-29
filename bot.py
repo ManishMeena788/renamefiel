@@ -21,10 +21,10 @@ name ="""
 ░╚════╝░░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚══════╝
 """
 
-async def Awakebit():
-  while True:
-    print("running")
-    await asyncio.sleep(8)
+#async def Awakebit():
+  #while True:
+    #print("running")
+    #await asyncio.sleep(8)
 
 
 
@@ -87,10 +87,10 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
-        try:
-          await Awakebit()
-        except Exception as e:
-          print(e)
+        #try:
+          #await Awakebit()
+        #except Exception as e:
+          #print(e)
 
     async def stop(self, *args):
         await super().stop()
