@@ -121,20 +121,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 #=====================================================================================##
 
 
-x = []
 
-@Bot.on_message(filters.command('start') & filters.private)
-async def start_command(client: Client, message: Message):
-  await message.reply("Please wait...")
-  if len(x) == 0:
-    x.append("13")
-    while True:
-      print("1111")
-  else:
-    pass
-    
-    
-  
 @Bot.on_message(filters.command('sstart') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
