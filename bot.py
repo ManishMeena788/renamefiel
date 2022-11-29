@@ -2,7 +2,7 @@
 
 from aiohttp import web
 from plugins import web_server
-
+import asyncio
 import pyromod.listen
 from pyrogram import Client
 from pyrogram.enums import ParseMode
@@ -21,6 +21,9 @@ name ="""
 ░╚════╝░░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚══════╝
 """
 
+while True:
+  print("running")
+  await asyncio.sleep(8)
 
 class Bot(Client):
     def __init__(self):
